@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "defaultText": "#",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "errorMessage": "Enter a Valid Color Code",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "9x5vsoil9h",
+  "label": "Enter Secondary Color",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 9,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 61,
+  "needsErrorInfo": false,
+  "originalBottomRow": 42,
+  "originalTopRow": 36,
+  "parentColumnSpace": 20.5625,
+  "parentId": "x0vpju1izc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "showStepArrows": false,
+  "topRow": 36,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{ /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(seconCol.text.trim()) }}\n",
+  "version": 2,
+  "widgetId": "c4dd65en5m",
+  "widgetName": "seconColCopy"
+}

@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{uploadLogoImage.files[0].data}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vnwkv6mklr",
+  "leftColumn": 17,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 25,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "originalBottomRow": 31,
+  "originalTopRow": 19,
+  "parentColumnSpace": 19.8125,
+  "parentId": "x0vpju1izc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "topRow": 18,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "cc91b4o1ik",
+  "widgetName": "logoCopy1"
+}
