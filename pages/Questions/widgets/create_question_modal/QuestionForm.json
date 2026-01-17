@@ -1,0 +1,509 @@
+{
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "#fff",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 79,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+    },
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.buttonColor"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.question.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.question.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.question.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.correctAnswer.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.correctAnswer.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.correctAnswer.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.points.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.points.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.points.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.type.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.type.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.type.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.categories.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.categories.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.categories.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.children.__array_item__.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.children.__array_item__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.options.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.categories.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.correctAnswer.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vinhfcifap",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onSubmit": "{{postQuestion.run().then(() => {\n  showModal(CreateQuestionSuccessModal.name);\n}).catch(() => {\n  showModal(CreateQuestionFailModal.name);\n});}}",
+  "originalBottomRow": 79,
+  "originalTopRow": 0,
+  "parentColumnSpace": 24.0625,
+  "parentId": "w6vhw4dhq3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "SECONDARY"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "categories": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "topics",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "array",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.topics))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Multiselect",
+          "identifier": "categories",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Topics",
+          "labelTextSize": "0.875rem",
+          "options": "{{ getTopics.data && getTopics.data.data.data ? getTopics.data.data.data.map(c => ({ label: c.name, value: c._id })) : [] }}\n\n",
+          "originalIdentifier": "categories",
+          "position": 9,
+          "serverSideFiltering": false,
+          "sourceData": [
+            "8e4e54df444e3aa44"
+          ]
+        },
+        "correctAnswer": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "correctAnswer",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.correctAnswer))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "correctAnswer",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Correct Answer",
+          "labelTextSize": "0.875rem",
+          "options": "{{ QuestionForm.formData.options?.map(opt => ({ label: opt, value: opt })) || [] }}\n",
+          "originalIdentifier": "correctAnswer",
+          "position": 4,
+          "serverSideFiltering": false,
+          "sourceData": "option A"
+        },
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "customField1",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "",
+          "fieldType": "Select",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Language",
+          "labelTextSize": "0.875rem",
+          "options": "[\n\n  {\n\n    \"label\": \"Bangla\",\n\n    \"value\": \"bn\"\n\n  },\n\n  {\n\n    \"label\": \"English\",\n\n    \"value\": \"en\"\n\n  }\n\n]",
+          "originalIdentifier": "customField1",
+          "position": 10,
+          "serverSideFiltering": false,
+          "sourceData": ""
+        },
+        "explanation": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "explanation",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.explanation))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "explanation",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Explanation",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "explanation",
+          "position": 8,
+          "sourceData": "This question is an example"
+        },
+        "options": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "options",
+          "backgroundColor": "#FAFAFA",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "cellBoxShadow": "none",
+          "children": {
+            "__array_item__": {
+              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+              "accessor": "__array_item__",
+              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+              "boxShadow": "none",
+              "children": {},
+              "dataType": "string",
+              "defaultValue": "Option",
+              "fieldType": "Text Input",
+              "iconAlign": "left",
+              "identifier": "__array_item__",
+              "isCustomField": false,
+              "isDisabled": false,
+              "isRequired": false,
+              "isSpellCheck": false,
+              "isVisible": true,
+              "label": "Write option",
+              "labelTextSize": "0.875rem",
+              "originalIdentifier": "__array_item__",
+              "position": -1,
+              "sourceData": "option A"
+            }
+          },
+          "dataType": "array",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.options))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Array",
+          "identifier": "options",
+          "isCollapsible": true,
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Options",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "options",
+          "position": 2,
+          "sourceData": [
+            "option A",
+            "option B",
+            "option C"
+          ]
+        },
+        "points": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "points",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.points))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "points",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Points",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "points",
+          "position": 6,
+          "sourceData": 10
+        },
+        "question": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "question",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.question))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "question",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Question",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "question",
+          "position": 0,
+          "sourceData": "Question 1"
+        },
+        "type": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "accessor": "type",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.type))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "type",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Type",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"MCQ\",\n    \"value\": \"mcq\"\n  },\n  {\n    \"label\": \"True False\",\n    \"value\": \"true_false\"\n  },\n  {\n    \"label\": \"Mixed\",\n    \"value\": \"mixed\"\n  }\n]",
+          "originalIdentifier": "type",
+          "position": 7,
+          "serverSideFiltering": false,
+          "sourceData": "mcq"
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(QuestionForm.sourceData, QuestionForm.formData, QuestionForm.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "categories": [
+          "8e4e54df444e3aa44"
+        ],
+        "correctAnswer": "option A",
+        "explanation": "This question is an example",
+        "options": [
+          "option A",
+          "option B",
+          "option C"
+        ],
+        "points": 10,
+        "question": "Question 1",
+        "type": "mcq"
+      }
+    }
+  },
+  "scrollContents": true,
+  "showReset": true,
+  "sourceData": "{\n  \"question\": \"\",\n  \"options\": [\"\"\n  ],\n  \"correctAnswer\": \"\",\n  \"points\": int,\n  \"type\": \"\",\n  \"explanation\": \"\",\n  \"categories\": [\n    \n  ]\n}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY"
+  },
+  "title": "Create New Question",
+  "topRow": 0,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "tyv8oktbf4",
+  "widgetName": "QuestionForm"
+}

@@ -1,0 +1,6 @@
+{
+  "name": {{categoryTable.triggeredRow.name}},
+  "description": {{categoryTable.triggeredRow.description}},
+  "icon": {{categoryTable.triggeredRow.icon}},
+  "color": {{categoryTable.triggeredRow.color}},
+}

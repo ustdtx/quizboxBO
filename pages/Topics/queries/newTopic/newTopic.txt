@@ -1,0 +1,4 @@
+{
+	"name":{{createTopic.formData.name}},
+	"lang":{{createTopic.formData.lang}}
+}

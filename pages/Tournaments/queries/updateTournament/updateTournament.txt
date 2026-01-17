@@ -1,0 +1,7 @@
+{
+	"name":{{Table1.triggeredRow.name}},
+	"isFree":{{Table1.triggeredRow.isFree}},
+	"entryFee":{{Table1.triggeredRow.entryFee}},
+	"startDate":{{Table1.triggeredRow.startDate}},
+	"endDate":{{Table1.triggeredRow.endDate}}
+}

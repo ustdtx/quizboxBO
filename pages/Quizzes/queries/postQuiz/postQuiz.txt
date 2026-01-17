@@ -1,0 +1,24 @@
+{
+	"title":{{frmQuestion.formData.title}},
+	"description":{{frmQuestion.formData.description}},
+	"difficultyLevel":{{frmQuestion.formData.difficulty}},
+	"type":{{frmQuestion.formData.type}},
+	"timeLimit":{{frmQuestion.formData.timeLimit}},
+	"isRandom":{{frmQuestion.formData.isRandom}},
+	"isFree":{{frmQuestion.formData.isFree}},
+	"totalQuestion":{{frmQuestion.formData.totalQuestions}},
+	"totalPoint":{{frmQuestion.formData.totalPoints}},
+	"tryAgain":{{frmQuestion.formData.tryAgain}},
+	"rewardConfig": {
+		"prizeMoney":100,
+		"distributions":{{frmQuestion.formData.distribution}}
+	},
+"topics":{{frmQuestion.formData.topics}},
+"startDate":{{frmQuestion.formData.startDate}},
+"endDate":{{frmQuestion.formData.endDate}},
+"color":{{frmQuestion.formData.color}},
+"price":{{frmQuestion.formData.price}},
+"lang":{{frmQuestion.formData.lang}},
+"tenant":{{frmQuestion.formData.tenant}}
+
+}

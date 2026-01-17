@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "68e2763c7b259b69c39690c9_1e133244-230c-4267-a4e9-d40c6e68779e",
+  "id": "Payment_JSObject2",
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Payment",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "tournamentNameMap",
+        "value": "{}"
+      },
+      {
+        "name": "currentPage",
+        "value": "0"
+      },
+      {
+        "name": "totalPages",
+        "value": "null"
+      },
+      {
+        "name": "fetchingPromises",
+        "value": "{}"
+      }
+    ]
+  }
+}

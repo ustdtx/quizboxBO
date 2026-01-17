@@ -1,0 +1,23 @@
+{"name":{{tName.text}},
+ "logo":{{tLogo.text}},
+ "templateConfig":{
+ "tenantPrimaryColor":{{priCol.text}},
+ "tenantSecondaryColor":{{secCol.text}},
+ "textColor":{{textColCopy.options.code}},
+ "tenantSMSService":{{smsProv.text}},
+ "tenantPaymentService":{{payProv.text}},
+  "contactInfo":{
+ "phone":{{tPhoneCopy.text}},
+ "email":{{tmailCopy.text}},
+ "facebook":{{tFBCopy.text}},
+ "messanger":{{tMessengerCopy.text}}
+ },
+ "loginInfo":{
+ "subscriptionCharge":{{subsPrice.text}},
+ "loginImageURL":{{logImage.text}},
+ "loginTextDescription":{{logDesc.text}},
+ "loginAdImageLink":{{logAdImage.text}}},
+ "allowedOperator":{{MultiSelect1.selectedOptionValues}}
+}
+ 
+}

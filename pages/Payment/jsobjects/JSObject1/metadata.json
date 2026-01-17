@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "68e2763c7b259b69c39690c9_165b8995-e965-4742-9268-db54971a9ddd",
+  "id": "Payment_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Payment",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "quizTitleMap",
+        "value": "{}"
+      },
+      {
+        "name": "currentPage",
+        "value": "1"
+      },
+      {
+        "name": "totalPages",
+        "value": "null"
+      },
+      {
+        "name": "fetchingPromises",
+        "value": "{}"
+      }
+    ]
+  }
+}

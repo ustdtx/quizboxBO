@@ -1,0 +1,9 @@
+{
+  "question": {{ QuestionForm.formData.question }},
+  "options": {{ QuestionForm.formData.options }},
+  "correctAnswer": {{ QuestionForm.formData.correctAnswer }},
+  "points": {{ QuestionForm.formData.points }},
+  "type": {{ QuestionForm.formData.type }},
+  "explanation": {{ QuestionForm.formData.explanation }},
+  "categories": {{ QuestionForm.formData.categories }}
+}

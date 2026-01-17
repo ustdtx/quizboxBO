@@ -1,0 +1,4 @@
+{
+	"category":{{JSONForm1.formData.category}},
+	"topics":{{JSONForm1.formData.topics}}
+}

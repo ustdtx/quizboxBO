@@ -1,0 +1,11 @@
+{
+"entryFee":{{createTournament.formData.entryFee}},
+"categories":[{{createTournament.formData.categories}}],
+"color":{{createTournament.formData.color}},
+"startDate":{{createTournament.formData.startDate}},
+"endDate":{{createTournament.formData.endDate}},
+"name":{{createTournament.formData.name}},
+"description":{{createTournament.formData.description}},
+"lang":{{createTournament.formData.lang}},
+"tenant":{{createTournament.formData.tenant}}
+}

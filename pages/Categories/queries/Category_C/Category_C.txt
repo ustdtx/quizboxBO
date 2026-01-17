@@ -1,0 +1,9 @@
+{
+  "name": {{CreateCategoryForm.formData.name}},
+  "tenant": {{CreateCategoryForm.formData.tenant}},
+  "description": {{CreateCategoryForm.formData.description}},
+  "color": {{CreateCategoryForm.formData.color}},
+  "icon": {{CreateCategoryForm.formData.icon}},
+	"status":{{CreateCategoryForm.formData.status}},
+	"lang":{{CreateCategoryForm.formData.lang}}
+}
