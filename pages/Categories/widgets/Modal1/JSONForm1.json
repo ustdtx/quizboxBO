@@ -145,6 +145,9 @@
     },
     {
       "key": "schema.__root_schema__.children.customField3.onOptionChange"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.onFilterUpdate"
     }
   ],
   "fieldLimitExceeded": false,
@@ -217,15 +220,16 @@
           "identifier": "customField2",
           "isCustomField": true,
           "isDisabled": false,
-          "isFilterable": false,
+          "isFilterable": true,
           "isRequired": false,
           "isVisible": true,
           "label": "Topics",
           "labelTextSize": "0.875rem",
+          "onFilterUpdate": "{{getTopics.run()}}",
           "options": "{{ getTopics.data && getTopics.data.data.data ? getTopics.data.data.data.map(c => ({ label: c.name, value: c._id })) : [] }}",
           "originalIdentifier": "customField2",
           "position": 2,
-          "serverSideFiltering": false,
+          "serverSideFiltering": true,
           "sourceData": []
         },
         "customField3": {
