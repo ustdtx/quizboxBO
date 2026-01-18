@@ -15,7 +15,7 @@
       "headers": [
         {
           "key": "lang",
-          "value": "{{JSONForm1.formData.lang}}"
+          "value": "{{categoryTable.triggeredRow.lang}}"
         }
       ],
       "httpMethod": "GET",
@@ -27,7 +27,12 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "search",
+          "value": "{{JSONForm1.fieldState.topics.filterText}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -40,6 +45,9 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "name": "getTopics",

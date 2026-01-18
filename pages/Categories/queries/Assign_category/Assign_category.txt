@@ -1,4 +1,4 @@
 {
-	"category":{{JSONForm1.formData.category}},
+	"category":{{categoryTable.triggeredRow._id}},
 	"topics":{{JSONForm1.formData.topics}}
 }
