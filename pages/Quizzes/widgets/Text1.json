@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 18,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -30,8 +33,8 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 125,
   "needsErrorInfo": false,
-  "originalBottomRow": 5,
-  "originalTopRow": 1,
+  "originalBottomRow": 18,
+  "originalTopRow": 3,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -40,10 +43,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 15,
   "shouldTruncate": false,
-  "text": "All Quizzes (Click quiz to edit)",
+  "text": "Total Quizzes: {{ getQuizStats.data[0]?.total || 0 }}\n\nPublished Quizzes: {{ getQuizStats.data[0]?.published || 0 }}\n\nDraft Quizzes: {{ getQuizStats.data[0]?.draft || 0 }}\n\nAll Quizzes: ",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 1,
+  "topRow": 3,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
