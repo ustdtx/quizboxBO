@@ -247,6 +247,15 @@
     },
     {
       "key": "schema.__root_schema__.children.topics.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.explanation.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -276,7 +285,7 @@
   "mobileTopRow": 143,
   "needsErrorInfo": false,
   "onSubmit": "{{updateQuestions.run().then(() => {\n  showAlert('Question Updated Successfully', 'success');\n}).catch(() => {\n  showAlert('Question failed to update', 'error');\n});}}",
-  "originalBottomRow": 78,
+  "originalBottomRow": 85,
   "originalTopRow": 0,
   "parentColumnSpace": 24.0625,
   "parentId": "qp21bv0e5b",
@@ -314,7 +323,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "V",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "__v",
@@ -409,6 +418,28 @@
           "originalIdentifier": "deletedAt",
           "position": 10,
           "sourceData": ""
+        },
+        "explanation": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
+          "accessor": "explanation",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.explanation))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "explanation",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Explanation",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "explanation",
+          "position": 14,
+          "sourceData": "বাংলা বর্ণমালায় ৩৯টি ব্যঞ্জনবর্ণ আছে"
         },
         "lang": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",

@@ -15,6 +15,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -27,6 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
+  "onClick": "{{Api1.run().then(() => {\n  showAlert(Api1.responseMeta, '');\n});}}",
   "parentId": "frtdgztm35",
   "placement": "CENTER",
   "recaptchaType": "V3",
