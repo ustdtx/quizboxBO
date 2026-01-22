@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "696bb90d1c0704487d1a737a_e2233903-5bea-4ecc-9531-50ac534bf663",
-  "id": "Topics_getCategoryStats",
+  "gitSyncId": "696bb90d1c0704487d1a737a_e9b2c05c-8bce-40bc-af1b-6955d2a034f8",
+  "id": "Tenants (Vendors)_getQuestionStats",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -9,14 +9,14 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": "[\n    {\n      \"$group\": {\n        \"_id\": null,\n        \"total\": { \"$sum\": 1 },\n        \"active\": {\n          \"$sum\": {\n            \"$cond\": [\n              { \"$eq\": [\"$status\", \"active\"] },\n              1,\n              0\n            ]\n          }\n        },\n        \"inactive\": {\n          \"$sum\": {\n            \"$cond\": [\n              { \"$eq\": [\"$status\", \"inactive\"] },\n              1,\n              0\n            ]\n          }\n        }\n      }\n    }\n  ]"
+            "data": "[\n    {\n      \"$group\": {\n        \"_id\": \"$status\",\n        \"count\": { \"$sum\": 1 }\n      }\n    },\n    {\n      \"$group\": {\n        \"_id\": null,\n        \"total\": { \"$sum\": \"$count\" },\n        \"byType\": {\n          \"$push\": {\n            \"status\": \"$_id\",\n            \"count\": \"$count\"\n          }\n        }\n      }\n    }\n  ]"
           },
           "limit": {
             "data": "10"
           }
         },
         "collection": {
-          "data": "topics"
+          "data": "tenants"
         },
         "command": {
           "data": "AGGREGATE"
@@ -50,7 +50,7 @@
             "data": ""
           },
           "query": {
-            "data": ""
+            "data": "[\n    {\n      \"$group\": {\n        \"_id\": \"$type\",\n        \"count\": { \"$sum\": 1 }\n      }\n    },\n    {\n      \"$group\": {\n        \"_id\": null,\n        \"total\": { \"$sum\": \"$count\" },\n        \"byType\": {\n          \"$push\": {\n            \"type\": \"$_id\",\n            \"count\": \"$count\"\n          }\n        }\n      }\n    }\n  ]"
           },
           "skip": {
             "data": ""
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"aggregate\": \"topics\",\n  \"pipeline\": [\n    {\n      \"$group\": {\n        \"_id\": null,\n        \"total\": { \"$sum\": 1 },\n        \"active\": {\n          \"$sum\": {\n            \"$cond\": [\n              { \"$eq\": [\"$status\", \"active\"] },\n              1,\n              0\n            ]\n          }\n        },\n        \"inactive\": {\n          \"$sum\": {\n            \"$cond\": [\n              { \"$eq\": [\"$status\", \"inactive\"] },\n              1,\n              0\n            ]\n          }\n        }\n      }\n    }\n  ],\n  \"cursor\": {}\n}\n",
+            "data": "{\n  \"aggregate\": \"tenants\",\n  \"pipeline\": [\n    {\n      \"$group\": {\n        \"_id\": \"$status\",\n        \"count\": { \"$sum\": 1 }\n      }\n    },\n    {\n      \"$group\": {\n        \"_id\": null,\n        \"total\": { \"$sum\": \"$count\" },\n        \"byType\": {\n          \"$push\": {\n            \"status\": \"$_id\",\n            \"count\": \"$count\"\n          }\n        }\n      }\n    }\n  ],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -96,8 +96,8 @@
       "pluginId": "mongo-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "getCategoryStats",
-    "pageId": "Topics",
+    "name": "getQuestionStats",
+    "pageId": "Tenants (Vendors)",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
