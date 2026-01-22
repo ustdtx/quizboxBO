@@ -42,10 +42,9 @@
     "updatedAt",
     "__v",
     "category",
-    "nameBn",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1768453940759,
+  "columnUpdatedAt": 1768978319731,
   "columnWidthMap": {
     "tenant": 117
   },
@@ -114,9 +113,6 @@
     },
     {
       "key": "primaryColumns.category.computedValue"
-    },
-    {
-      "key": "primaryColumns.nameBn.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -163,8 +159,8 @@
   "mobileTopRow": 42,
   "needsErrorInfo": false,
   "onPageChange": "{{getTopics.run()}}",
-  "originalBottomRow": 76,
-  "originalTopRow": 28,
+  "originalBottomRow": 64,
+  "originalTopRow": 16,
   "parentColumnSpace": 24.0625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -407,40 +403,6 @@
       "label": "name",
       "notation": "standard",
       "originalId": "name",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "nameBn": {
-      "alias": "nameBn",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = showTopics.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"nameBn\"])) : nameBn })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "nameBn",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "nameBn",
-      "notation": "standard",
-      "originalId": "nameBn",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
