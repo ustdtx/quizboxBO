@@ -46,9 +46,10 @@
     "updatedAt",
     "__v",
     "lang",
-    "customColumn1"
+    "customColumn1",
+    "explanation"
   ],
-  "columnUpdatedAt": 1768978285244,
+  "columnUpdatedAt": 1769081974487,
   "columnWidthMap": {
     "explanation": 301,
     "points": 91,
@@ -130,6 +131,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.explanation.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -167,6 +171,7 @@
   "mobileTopRow": 86,
   "needsErrorInfo": false,
   "onPageChange": "{{getQuestions.run()}}",
+  "originalBottomRow": 88,
   "originalBottomRow": 88,
   "originalTopRow": 20,
   "parentColumnSpace": 24.0625,
@@ -657,6 +662,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{getQuestions.data.data.data}}",
   "textSize": "0.875rem",
+  "topRow": 19,
   "topRow": 19,
   "totalRecordsCount": "{{getQuestions.data.data.total}}",
   "type": "TABLE_WIDGET_V2",

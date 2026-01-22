@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{Api1.run().then(() => {\n  showAlert(Api1.responseMeta, '');\n});}}",
+  "onClick": "{{Api1.run().then(() => {\n  showAlert('Import started succesfully. Import Id: ' + Api1.data.data.importId, 'info');\n  storeValue('importId', Api1.data.data.importId);\n  ImportPoller.poll();\n});}}",
   "parentId": "frtdgztm35",
   "placement": "CENTER",
   "recaptchaType": "V3",
