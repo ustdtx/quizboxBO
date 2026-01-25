@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b5c081deac547771e48c2a_bce30107-169e-4dd0-9968-c183d0c5d3ec",
-  "id": "Questions_getTopics",
+  "gitSyncId": "696bb6a01c0704487d1a7311_ccd17604-db8d-46d2-bf96-a16335c5a8e7",
+  "id": "Questions_Api2",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -12,22 +12,22 @@
       "formData": {
         "apiContentType": "none"
       },
-      "headers": [
-        {
-          "key": "lang",
-          "value": "bn"
-        }
-      ],
+      "headers": [],
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/v1/topics",
+      "path": "/api/v1/questions",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{questionsTable.pageNo}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -37,10 +37,17 @@
       "name": "QuizboxBD Prod API",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "getTopics",
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
+      }
+    ],
+    "name": "Api2",
     "pageId": "Questions",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

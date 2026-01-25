@@ -131,9 +131,6 @@
     },
     {
       "key": "totalRecordsCount"
-    },
-    {
-      "key": "primaryColumns.explanation.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -171,9 +168,8 @@
   "mobileTopRow": 86,
   "needsErrorInfo": false,
   "onPageChange": "{{getQuestions.run()}}",
-  "originalBottomRow": 88,
-  "originalBottomRow": 88,
-  "originalTopRow": 20,
+  "originalBottomRow": 87,
+  "originalTopRow": 19,
   "parentColumnSpace": 24.0625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -662,7 +658,6 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{getQuestions.data.data.data}}",
   "textSize": "0.875rem",
-  "topRow": 19,
   "topRow": 19,
   "totalRecordsCount": "{{getQuestions.data.data.total}}",
   "type": "TABLE_WIDGET_V2",

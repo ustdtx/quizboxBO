@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/v1//questions/imports/{{appsmith.store.importId}}",
+      "path": "/api/v1/questions/imports/{{appsmith.store.importId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
