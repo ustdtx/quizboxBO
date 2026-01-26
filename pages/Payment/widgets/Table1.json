@@ -851,7 +851,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 59,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{getPaymentHistory.data.data.data}}",

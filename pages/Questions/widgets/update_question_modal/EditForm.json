@@ -244,18 +244,6 @@
     },
     {
       "key": "schema.__root_schema__.children.lang.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.topics.options"
-    },
-    {
-      "key": "schema.__root_schema__.children.explanation.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.explanation.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.explanation.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -285,7 +273,7 @@
   "mobileTopRow": 143,
   "needsErrorInfo": false,
   "onSubmit": "{{updateQuestions.run().then(() => {\n  showAlert('Question Updated Successfully', 'success');\n}).catch(() => {\n  showAlert('Question failed to update', 'error');\n});}}",
-  "originalBottomRow": 85,
+  "originalBottomRow": 71,
   "originalTopRow": 0,
   "parentColumnSpace": 24.0625,
   "parentId": "qp21bv0e5b",
@@ -314,21 +302,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.__v))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "__v",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "V",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "__v",
           "position": 13,
-          "sourceData": 0
+          "sourceData": ""
         },
         "_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -419,28 +407,6 @@
           "position": 10,
           "sourceData": ""
         },
-        "explanation": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "accessor": "explanation",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.explanation))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "explanation",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Explanation",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "explanation",
-          "position": 14,
-          "sourceData": "বাংলা বর্ণমালায় ৩৯টি ব্যঞ্জনবর্ণ আছে"
-        },
         "lang": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "accessor": "lang",
@@ -469,40 +435,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.options))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "options",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Options",
           "labelTextSize": "0.875rem",
-          "options": [
-            {
-              "label": "Blue",
-              "value": "BLUE"
-            },
-            {
-              "label": "Green",
-              "value": "GREEN"
-            },
-            {
-              "label": "Red",
-              "value": "RED"
-            }
-          ],
           "originalIdentifier": "options",
           "position": 3,
-          "serverSideFiltering": false,
-          "sourceData": [
-            "দুধ",
-            "বিস্কুট",
-            "স্যুপ",
-            "রুটি"
-          ]
+          "sourceData": ""
         },
         "points": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -510,9 +457,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.points))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "points",
           "isCustomField": false,
@@ -524,7 +471,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "points",
           "position": 5,
-          "sourceData": 10
+          "sourceData": ""
         },
         "question": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -598,24 +545,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "array",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.topics))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Multiselect",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "topics",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Topics",
           "labelTextSize": "0.875rem",
-          "options": "{{ getTopics.data && getTopics.data.data.data ? getTopics.data.data.data.map(c => ({ label: c.name, value: c._id })) : [] }}\n\n",
           "originalIdentifier": "topics",
           "position": 9,
-          "serverSideFiltering": false,
-          "sourceData": [
-            "693c3b86f459b7a4f526bba8"
-          ]
+          "sourceData": ""
         },
         "type": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",

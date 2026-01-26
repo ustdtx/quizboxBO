@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "696bb90d1c0704487d1a737a_0993c014-d01f-459a-b648-c6ce11e11c91",
-  "id": "Questions_Api_Status",
+  "gitSyncId": "696bb6a01c0704487d1a7311_ccd17604-db8d-46d2-bf96-a16335c5a8e7",
+  "id": "Questions_Api2",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,13 +16,18 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/v1/questions/imports/{{appsmith.store.importId}}",
+      "path": "/api/v1/questions",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{questionsTable.pageNo}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -35,9 +40,12 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
-    "name": "Api_Status",
+    "name": "Api2",
     "pageId": "Questions",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
