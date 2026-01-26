@@ -4,7 +4,7 @@
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 24,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "dynamicBindingPathList": [
@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTyping": true,
   "fileDataType": "Binary",
   "files": [],
@@ -35,8 +39,9 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 10,
-  "originalTopRow": 6,
+  "onFilesSelected": "{{JSObject1.readAndValidate();}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
   "parentColumnSpace": 6.9375,
   "parentId": "frtdgztm35",
   "parentRowSpace": 10,
@@ -44,7 +49,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 32,
   "selectedFiles": [],
-  "topRow": 6,
+  "topRow": 20,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
   "widgetId": "tzy4a50lpd",

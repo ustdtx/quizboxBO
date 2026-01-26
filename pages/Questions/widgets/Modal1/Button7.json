@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 32,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY_BUTTON",
@@ -13,6 +13,14 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -21,7 +29,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{ appsmith.store.csvErrors && appsmith.store.csvErrors.length > 0 }}\n",
   "isLoading": false,
   "isVisible": true,
   "key": "hdmbta4r2a",
@@ -41,7 +49,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 63,
   "text": "Confirm",
-  "topRow": 18,
+  "topRow": 28,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "43ughya6gf",

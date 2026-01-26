@@ -141,7 +141,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "tk9cq5vciu",
-  "leftColumn": 3,
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -150,7 +150,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "onSubmit": "{{getLeaderboardTournaments.run().then(() => {\n  storeValue('activeTableData', getLeaderboardTournaments.data);\n});}}",
+  "onSubmit": "{{getLeaderboardQuiz.run().then(() => {\n  storeValue('activeTableData', getLeaderboardQuiz.data);\n});}}",
   "originalBottomRow": 40,
   "originalTopRow": 6,
   "parentColumnSpace": 20.5625,
@@ -165,7 +165,7 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 56,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -185,9 +185,9 @@
           "isFilterable": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Select Tournament",
+          "label": "Select Quiz",
           "labelTextSize": "0.875rem",
-          "options": "{{ tournamentGet.data && tournamentGet.data.data.data ? tournamentGet.data.data.data.map(c => ({ label: c.name, value: c.slug })) : [] }}",
+          "options": "{{ Api1.data && Api1.data.data.data ? Api1.data.data.data.map(c => ({ label: c.title, value: c.slug })) : [] }}",
           "originalIdentifier": "customField1",
           "position": 1,
           "serverSideFiltering": false,
@@ -210,7 +210,7 @@
           "isVisible": true,
           "label": "Select Tenant",
           "labelTextSize": "0.875rem",
-          "onOptionChange": "{{tournamentGet.run()}}",
+          "onOptionChange": "{{Api1.run()}}",
           "options": "{{ rTenants.data && rTenants.data.data ? rTenants.data.data.data.map(c => ({ label: c.name, value: c.slug })) : [] }}",
           "originalIdentifier": "customField2",
           "position": 0,
@@ -243,11 +243,11 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Select Tenant & Tournament",
+  "title": "Select Tenant & Quiz",
   "topRow": 6,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
-  "widgetId": "yhk69rcxe5",
-  "widgetName": "JSONForm1"
+  "widgetId": "6ln4bftcu9",
+  "widgetName": "JSONForm2"
 }

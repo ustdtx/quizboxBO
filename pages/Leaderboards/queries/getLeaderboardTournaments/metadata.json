@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b5c081deac547771e48c2a_bce30107-169e-4dd0-9968-c183d0c5d3ec",
-  "id": "Questions_getTopics",
+  "gitSyncId": "68e2763c7b259b69c39690c9_b08c9864-2fea-4640-91c8-960d982d8f98",
+  "id": "Leaderboards_getLeaderboardTournaments",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -14,14 +14,14 @@
       },
       "headers": [
         {
-          "key": "lang",
-          "value": "{{CSV_lang.selectedOptionValue}}"
+          "key": "x-tenant",
+          "value": "{{JSONForm1.formData.tenant}}"
         }
       ],
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/v1/topics/",
+      "path": "/api/v1/tournaments/{{JSONForm1.formData.slug}}/leaderboard",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -39,12 +39,15 @@
     },
     "dynamicBindingPathList": [
       {
+        "key": "path"
+      },
+      {
         "key": "headers[0].value"
       }
     ],
-    "name": "getTopics",
-    "pageId": "Questions",
-    "runBehaviour": "AUTOMATIC",
+    "name": "getLeaderboardTournaments",
+    "pageId": "Leaderboards",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
