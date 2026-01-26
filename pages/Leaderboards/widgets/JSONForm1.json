@@ -150,7 +150,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "onSubmit": "{{getLeaderboard.run()}}",
+  "onSubmit": "{{getLeaderboardTournaments.run().then(() => {\n  storeValue('activeTableData', getLeaderboardTournaments.data);\n});}}",
   "originalBottomRow": 40,
   "originalTopRow": 6,
   "parentColumnSpace": 20.5625,
