@@ -26,6 +26,10 @@
         {
           "key": "page",
           "value": "{{questionsTable.pageNo}}"
+        },
+        {
+          "key": "search",
+          "value": "{{questionsTable.searchText}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -43,6 +47,9 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "name": "getQuestions",

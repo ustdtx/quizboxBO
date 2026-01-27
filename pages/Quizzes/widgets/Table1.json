@@ -195,9 +195,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -219,6 +222,7 @@
   "mobileTopRow": 126,
   "needsErrorInfo": false,
   "onPageChange": "{{getQuiz.run()}}",
+  "onSearchTextChanged": "{{getQuiz.run()}}",
   "originalBottomRow": 66,
   "originalTopRow": 18,
   "parentColumnSpace": 20.5625,

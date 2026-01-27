@@ -244,6 +244,9 @@
     },
     {
       "key": "schema.__root_schema__.children.lang.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.topics.options"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -273,7 +276,7 @@
   "mobileTopRow": 143,
   "needsErrorInfo": false,
   "onSubmit": "{{updateQuestions.run().then(() => {\n  showAlert('Question Updated Successfully', 'success');\n}).catch(() => {\n  showAlert('Question failed to update', 'error');\n});}}",
-  "originalBottomRow": 71,
+  "originalBottomRow": 78,
   "originalTopRow": 0,
   "parentColumnSpace": 24.0625,
   "parentId": "qp21bv0e5b",
@@ -302,9 +305,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.__v))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "__v",
           "isCustomField": false,
@@ -316,7 +319,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "__v",
           "position": 13,
-          "sourceData": ""
+          "sourceData": 0
         },
         "_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -435,21 +438,40 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "array",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.options))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "options",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Options",
           "labelTextSize": "0.875rem",
+          "options": [
+            {
+              "label": "Blue",
+              "value": "BLUE"
+            },
+            {
+              "label": "Green",
+              "value": "GREEN"
+            },
+            {
+              "label": "Red",
+              "value": "RED"
+            }
+          ],
           "originalIdentifier": "options",
           "position": 3,
-          "sourceData": ""
+          "serverSideFiltering": false,
+          "sourceData": [
+            "কিয়েলিনি",
+            "রামোস",
+            "পেপে",
+            "গাত্তুসো"
+          ]
         },
         "points": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -457,9 +479,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.points))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "points",
           "isCustomField": false,
@@ -471,7 +493,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "points",
           "position": 5,
-          "sourceData": ""
+          "sourceData": 10
         },
         "question": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
@@ -545,21 +567,24 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "array",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.topics))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "topics",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Topics",
           "labelTextSize": "0.875rem",
+          "options": "{{ getTopics.data && getTopics.data.data.data ? getTopics.data.data.data.map(c => ({ label: c.name, value: c._id })) : [] }}\n",
           "originalIdentifier": "topics",
           "position": 9,
-          "sourceData": ""
+          "serverSideFiltering": false,
+          "sourceData": [
+            "69771097dd8c32ab12485ac1"
+          ]
         },
         "type": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(EditForm.sourceData, EditForm.formData, EditForm.fieldState)}}",

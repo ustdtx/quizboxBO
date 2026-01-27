@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 88,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -46,10 +46,9 @@
     "updatedAt",
     "__v",
     "lang",
-    "customColumn1",
-    "explanation"
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1769081974487,
+  "columnUpdatedAt": 1769535812822,
   "columnWidthMap": {
     "explanation": 301,
     "points": 91,
@@ -131,9 +130,6 @@
     },
     {
       "key": "totalRecordsCount"
-    },
-    {
-      "key": "primaryColumns.explanation.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,9 +143,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -171,6 +170,7 @@
   "mobileTopRow": 86,
   "needsErrorInfo": false,
   "onPageChange": "{{getQuestions.run()}}",
+  "onSearchTextChanged": "{{getQuestions.run()}}",
   "originalBottomRow": 88,
   "originalTopRow": 20,
   "parentColumnSpace": 24.0625,
@@ -365,40 +365,6 @@
       "notation": "standard",
       "originalId": "deletedAt",
       "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "explanation": {
-      "alias": "explanation",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = questionsTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"explanation\"])) : explanation })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "explanation",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "explanation",
-      "notation": "standard",
-      "originalId": "explanation",
-      "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -695,7 +661,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{getQuestions.data.data.data}}",
   "textSize": "0.875rem",
-  "topRow": 20,
+  "topRow": 19,
   "totalRecordsCount": "{{getQuestions.data.data.total}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

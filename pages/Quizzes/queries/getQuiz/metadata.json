@@ -31,6 +31,10 @@
         {
           "key": "page",
           "value": "{{Table1.pageNo}}"
+        },
+        {
+          "key": "search",
+          "value": "{{Table1.searchText}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -48,6 +52,9 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "name": "getQuiz",

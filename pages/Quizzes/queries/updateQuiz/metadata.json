@@ -21,7 +21,7 @@
       "httpMethod": "PUT",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/v1/quiz/{{Table1.selectedRow._id}}",
+      "path": "/api/v1/quiz/{{Table1.triggeredRow._id}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true

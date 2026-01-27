@@ -285,7 +285,7 @@
   "mobileTopRow": 10,
   "needsErrorInfo": false,
   "onSubmit": "{{updateQuiz.run().then(() => {\n  showAlert('Quiz updated Successfully', 'success');\n}).catch(() => {\n  showAlert('Failed to update Quiz', 'error');\n});}}",
-  "originalBottomRow": 102,
+  "originalBottomRow": 87,
   "originalTopRow": 0,
   "parentColumnSpace": 24.0625,
   "parentId": "qawyqci0gk",
