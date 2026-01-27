@@ -114,24 +114,6 @@
       "key": "schema.__root_schema__.children.customField6.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.customField7.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField7.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField7.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField8.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField8.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField8.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.customField9.accentColor"
     },
     {
@@ -252,12 +234,6 @@
       "key": "schema.__root_schema__.children.customField15.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.customField7.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField8.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.customField14.defaultValue"
     },
     {
@@ -265,27 +241,12 @@
     },
     {
       "key": "schema.__root_schema__.children.customField13.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField20.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField20.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField20.defaultValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField7.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField8.isVisible"
     },
     {
       "key": "schema.__root_schema__.children.customField19.defaultValue"
@@ -324,7 +285,7 @@
   "mobileTopRow": 10,
   "needsErrorInfo": false,
   "onSubmit": "{{updateQuiz.run().then(() => {\n  showAlert('Quiz updated Successfully', 'success');\n}).catch(() => {\n  showAlert('Failed to update Quiz', 'error');\n});}}",
-  "originalBottomRow": 87,
+  "originalBottomRow": 102,
   "originalTopRow": 0,
   "parentColumnSpace": 24.0625,
   "parentId": "qawyqci0gk",
@@ -667,28 +628,6 @@
           "position": 3,
           "sourceData": ""
         },
-        "customField20": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "accessor": "status",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.status))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "customField20",
-          "isCustomField": true,
-          "isDisabled": true,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "customField20",
-          "position": 16,
-          "sourceData": ""
-        },
         "customField3": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
           "accessor": "difficulty",
@@ -754,50 +693,6 @@
           "originalIdentifier": "customField6",
           "position": 0,
           "sourceData": true
-        },
-        "customField7": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
-          "accessor": "totalQuestions",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.totalQuestion))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "customField7",
-          "isCustomField": true,
-          "isDisabled": false,
-          "isRequired": true,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (editQuiz.formData.isRandom))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "label": "Number of Questions",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "customField7",
-          "position": 8,
-          "sourceData": 0
-        },
-        "customField8": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
-          "accessor": "totalPoints",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.totalPoint))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "customField8",
-          "isCustomField": true,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (editQuiz.formData.isRandom))(editQuiz.sourceData, editQuiz.formData, editQuiz.fieldState)}}",
-          "label": "Total Points",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "customField8",
-          "position": 9,
-          "sourceData": 0
         },
         "customField9": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(frmQuestion.sourceData, frmQuestion.formData, frmQuestion.fieldState)}}",
