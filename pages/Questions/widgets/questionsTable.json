@@ -46,9 +46,10 @@
     "updatedAt",
     "__v",
     "lang",
-    "customColumn1"
+    "customColumn1",
+    "explanation"
   ],
-  "columnUpdatedAt": 1769535812822,
+  "columnUpdatedAt": 1769589317099,
   "columnWidthMap": {
     "explanation": 301,
     "points": 91,
@@ -130,6 +131,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.explanation.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -171,8 +175,8 @@
   "needsErrorInfo": false,
   "onPageChange": "{{getQuestions.run()}}",
   "onSearchTextChanged": "{{getQuestions.run()}}",
-  "originalBottomRow": 88,
-  "originalTopRow": 20,
+  "originalBottomRow": 87,
+  "originalTopRow": 19,
   "parentColumnSpace": 24.0625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -365,6 +369,40 @@
       "notation": "standard",
       "originalId": "deletedAt",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "explanation": {
+      "alias": "explanation",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = questionsTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"explanation\"])) : explanation })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "explanation",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "explanation",
+      "notation": "standard",
+      "originalId": "explanation",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
