@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 88,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -49,7 +49,7 @@
     "customColumn1",
     "explanation"
   ],
-  "columnUpdatedAt": 1769081974487,
+  "columnUpdatedAt": 1769589317099,
   "columnWidthMap": {
     "explanation": 301,
     "points": 91,
@@ -147,9 +147,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -171,8 +174,9 @@
   "mobileTopRow": 86,
   "needsErrorInfo": false,
   "onPageChange": "{{getQuestions.run()}}",
-  "originalBottomRow": 88,
-  "originalTopRow": 20,
+  "onSearchTextChanged": "{{getQuestions.run()}}",
+  "originalBottomRow": 87,
+  "originalTopRow": 19,
   "parentColumnSpace": 24.0625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -695,7 +699,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{getQuestions.data.data.data}}",
   "textSize": "0.875rem",
-  "topRow": 20,
+  "topRow": 19,
   "totalRecordsCount": "{{getQuestions.data.data.total}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
