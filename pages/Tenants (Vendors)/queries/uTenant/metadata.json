@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\"name\":{{tName.text}},\n \"logo\":{{tLogo.text}},\n \"templateConfig\":{\n \"tenantPrimaryColor\":{{priCol.text}},\n \"tenantSecondaryColor\":{{secCol.text}},\n \"textColor\":{{textColCopy.options.code}},\n \"tenantSMSService\":{{smsProv.text}},\n \"tenantPaymentService\":{{payProv.text}},\n  \"contactInfo\":{\n \"phone\":{{tPhoneCopy.text}},\n \"email\":{{tmailCopy.text}},\n \"facebook\":{{tFBCopy.text}},\n \"messanger\":{{tMessengerCopy.text}}\n },\n \"loginInfo\":{\n \"subscriptionCharge\":{{subsPrice.text}},\n \"loginImageURL\":{{logImage.text}},\n \"loginTextDescription\":{{logDesc.text}},\n \"loginAdImageLink\":{{logAdImage.text}}},\n \"allowedOperator\":{{MultiSelect1.selectedOptionValues}}\n}\n \n}",
+      "body": "{\"name\":{{tName.text}},\n \"logo\":{{tLogo.text}},\n \"templateConfig\":{\n \"tenantPrimaryColor\":{{priCol.text}},\n \"tenantSecondaryColor\":{{secCol.text}},\n \"textColor\":{{textColCopy.options.code}},\n \"tenantSMSService\":{{smsProv.text}},\n \"tenantPaymentService\":{{payProv.text}},\n \"contactInfo\":{\n \"phone\":{{tPhoneCopy.text}},\n \"email\":{{tmailCopy.text}},\n \"facebook\":{{tFBCopy.text}},\n \"messanger\":{{tMessengerCopy.text}}\n},\n\"loginInfo\":{\n\t\"subscriptionCharge\":{{subsPrice.text}},\n\t\"loginImageURL\":{{logImage.text}},\n\t\"loginTextDescription\":{{logDesc.text}},\n\t\"loginAdImageLink\":{{logAdImage.text}}},\n\"allowedOperator\":{{MultiSelect1.selectedOptionValues}}\n}\n\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

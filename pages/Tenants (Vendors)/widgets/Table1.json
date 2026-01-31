@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 74,
+  "bottomRow": 75,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -51,10 +51,10 @@
     "customColumn7",
     "customColumn8",
     "status",
-    "customColumn9",
-    "EditActions1"
+    "EditActions1",
+    "customColumn9"
   ],
-  "columnUpdatedAt": 1765125251773,
+  "columnUpdatedAt": 1769800814677,
   "columnWidthMap": {
     "_id": 146,
     "customColumn1": 164.00000000000003,
@@ -148,6 +148,15 @@
       "key": "primaryColumns.customColumn8.computedValue"
     },
     {
+      "key": "primaryColumns.customColumn9.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn9.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn9.boxShadow"
+    },
+    {
       "key": "primaryColumns.EditActions1.saveButtonColor"
     },
     {
@@ -161,15 +170,6 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    },
-    {
-      "key": "primaryColumns.customColumn9.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn9.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn9.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -246,7 +246,7 @@
       "isEditable": false,
       "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Save / Discard",
       "notation": "standard",
       "originalId": "EditActions1",
@@ -952,7 +952,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{rTenant.data.data.data}}",
   "textSize": "0.875rem",
-  "topRow": 15,
+  "topRow": 16,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

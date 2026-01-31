@@ -6,18 +6,18 @@
  "textColor":{{textColCopy.options.code}},
  "tenantSMSService":{{smsProv.text}},
  "tenantPaymentService":{{payProv.text}},
-  "contactInfo":{
+ "contactInfo":{
  "phone":{{tPhoneCopy.text}},
  "email":{{tmailCopy.text}},
  "facebook":{{tFBCopy.text}},
  "messanger":{{tMessengerCopy.text}}
- },
- "loginInfo":{
- "subscriptionCharge":{{subsPrice.text}},
- "loginImageURL":{{logImage.text}},
- "loginTextDescription":{{logDesc.text}},
- "loginAdImageLink":{{logAdImage.text}}},
- "allowedOperator":{{MultiSelect1.selectedOptionValues}}
+},
+"loginInfo":{
+	"subscriptionCharge":{{subsPrice.text}},
+	"loginImageURL":{{logImage.text}},
+	"loginTextDescription":{{logDesc.text}},
+	"loginAdImageLink":{{logAdImage.text}}},
+"allowedOperator":{{MultiSelect1.selectedOptionValues}}
 }
- 
+
 }
