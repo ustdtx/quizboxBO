@@ -1,57 +1,61 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "defaultText": "{{Table1.triggeredRow.templateConfig.tenantPaymentService}}",
+  "defaultOptionValue": "none",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "tky1d9vpqf",
-  "label": "Enter Payment Service Provider",
+  "key": "28onb2jnaq",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelText": "Select Payment Gateway",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 29,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 20,
-  "mobileLeftColumn": 29,
-  "mobileRightColumn": 49,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 73,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 66,
   "needsErrorInfo": false,
-  "parentColumnSpace": 14.53125,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 15.0625,
   "parentId": "a4dwr5sa5n",
   "parentRowSpace": 10,
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 49,
-  "showStepArrows": false,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"None\",\n    \"code\": \"none\"\n  },\n  {\n    \"name\": \"Bd Apps\",\n    \"code\": \"bdapps\"\n  },\n  {\n    \"name\": \"EPS\",\n    \"code\": \"eps\"\n  }\n]",
   "topRow": 14,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "rh55wpws9b",
-  "widgetName": "payProv"
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "5t1a1jhive",
+  "widgetName": "tenantPaymentServiceCopy"
 }

@@ -1,69 +1,61 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30,
+  "bottomRow": 63,
   "boxShadow": "none",
-  "defaultText": "#",
+  "defaultOptionValue": "none",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "iconName"
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [],
-  "errorMessage": "Enter a Valid HEX Color Code",
-  "iconAlign": "left",
-  "iconName": "\n",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "k9xer18md7",
-  "label": "Enter Primary Color",
+  "key": "28onb2jnaq",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
-  "labelTextColor": "",
+  "labelText": "Select Payment Gateway",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 58,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 51,
+  "mobileBottomRow": 73,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 66,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 24,
-  "parentColumnSpace": 20.5625,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 15.0625,
   "parentId": "x0vpju1izc",
   "parentRowSpace": 10,
-  "regex": "",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
-  "showStepArrows": false,
-  "topRow": 24,
-  "type": "INPUT_WIDGET_V2",
-  "validation": "{{ /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(primCol.text.trim()) }}\n",
-  "version": 2,
-  "widgetId": "psa7xo9f33",
-  "widgetName": "primColCopy"
+  "rightColumn": 29,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"None\",\n    \"code\": \"none\"\n  },\n  {\n    \"name\": \"Bd Apps\",\n    \"code\": \"bdapps\"\n  },\n  {\n    \"name\": \"EPS\",\n    \"code\": \"eps\"\n  }\n]",
+  "topRow": 56,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "sawi6uvphq",
+  "widgetName": "tenantPaymentService"
 }

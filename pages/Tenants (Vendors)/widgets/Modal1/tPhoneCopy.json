@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 48,
   "boxShadow": "none",
   "defaultText": "{{Table1.triggeredRow.templateConfig.contactInfo.phone}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 39,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 43,
+  "topRow": 42,
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,

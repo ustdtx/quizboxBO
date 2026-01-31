@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 42,
   "boxShadow": "none",
-  "defaultText": "{{Table1.triggeredRow.templateConfig.loginAdImageLink}}",
+  "defaultText": "{{Table1.triggeredRow.templateConfig.loginInfo.loginAdImageLink}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -1,24 +1,24 @@
-{"name":{{tenantName.text}},
- "logo":{{tenantLogo.text}},
+{"name":{{tenantNameCopy.text}},
+ "logo":{{logo_image_upload.data.data.url}},
  "templateConfig":{
- "tenantPrimaryColor":{{primCol.text}},
- "tenantSecondaryColor":{{seconCol.text}},
- "textColor":{{textCol.options.value}},
- "tenantSMSService":{{smsService.text}},
- "tenantPaymentService":{{tenantPaymentService.text}},
+ "tenantPrimaryColor":{{primColCopy.text}},
+ "tenantSecondaryColor":{{seconColCopy.text}},
+ "textColor":{{textColCopy1.selectedOptionValue}},
+ "tenantSMSService":{{smsServiceCopy.text}},
+ "tenantPaymentService":{{tenantPaymentService.selectedOptionValue}},
  "contactInfo":{
- "phone":{{tPhone.text}},
- "email":{{tmail.text}},
- "facebook":{{tFB.text}},
- "messanger":{{tMessenger.text}}
+ "phone":{{tPhoneCopy1.text}},
+ "email":{{tmailCopy1.text}},
+ "facebook":{{tFBCopy1.text}},
+ "messanger":{{tMessengerCopy1.text}}
  },
  "loginInfo":{
- "subscriptionCharge":{{subPrice.text}},
- "loginImageURL":{{loginImage.text}},
- "loginTextDescription":{{loginDescription.text}},
- "allowedOperator":{{MultiSelect1.selectedOptionValues}},
- "loginAdImageLink":{{loginAdImage.text}}
+ "subscriptionCharge":{{subPriceCopy.text}},
+ "loginImageURL":{{login_image_upload.data.data.url}},
+ "loginTextDescription":{{loginDescriptionCopy.text}},
+ "loginAdImageLink":{{login_ad_image_upload.data.data.url}}
  }
+ "allowedOperator":{{MultiSelect1Copy1.selectedOptionValues}}
 }
  
 }
