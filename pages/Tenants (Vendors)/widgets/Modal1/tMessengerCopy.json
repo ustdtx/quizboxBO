@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 55,
+  "bottomRow": 54,
   "boxShadow": "none",
   "defaultText": "{{Table1.triggeredRow.templateConfig.contactInfo.messanger}}",
   "dynamicBindingPathList": [
@@ -49,7 +49,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "showStepArrows": false,
-  "topRow": 49,
+  "topRow": 48,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "nakveftii7",

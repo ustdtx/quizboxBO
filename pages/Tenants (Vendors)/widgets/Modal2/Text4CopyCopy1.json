@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 42,
+  "bottomRow": 33,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "originalBottomRow": 42,
-  "originalTopRow": 37,
+  "originalBottomRow": 33,
+  "originalTopRow": 28,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "x0vpju1izc",
@@ -43,7 +43,7 @@
   "text": "Add login image",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 37,
+  "topRow": 28,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

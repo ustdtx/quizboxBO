@@ -50,7 +50,7 @@
     ],
     "name": "login_image_upload",
     "pageId": "Tenants (Vendors)",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
