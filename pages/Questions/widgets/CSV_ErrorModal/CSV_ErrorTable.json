@@ -34,9 +34,10 @@
   "columnOrder": [
     "row",
     "field",
-    "message"
+    "message",
+    "debug"
   ],
-  "columnUpdatedAt": 1769419628508,
+  "columnUpdatedAt": 1769612018846,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -67,6 +68,9 @@
     },
     {
       "key": "primaryColumns.message.computedValue"
+    },
+    {
+      "key": "primaryColumns.debug.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -100,6 +104,40 @@
   "parentId": "o4xisq140c",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "debug": {
+      "alias": "debug",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = CSV_ErrorTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"debug\"])) : debug })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "debug",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "debug",
+      "notation": "standard",
+      "originalId": "debug",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "field": {
       "alias": "field",
       "allowCellWrapping": false,

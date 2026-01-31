@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68e2763c7b259b69c39690c9_050a9a6d-e96e-42cb-a202-688f664ae569",
-  "id": "Tenants (Vendors)_logo_image_upload",
+  "gitSyncId": "6979d4701c0704487d1a7644_8e4eb4f4-6818-4e2b-93bc-ed33856799da",
+  "id": "Tenants (Vendors)_login_ad_image_uploadCopy",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
         {
           "key": "image",
           "type": "File",
-          "value": "{{uploadLogoImageCopy.files[0].data}}"
+          "value": "{{uploadLoginAdImage.files[0].data}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -48,7 +48,7 @@
         "key": "bodyFormData[0].value"
       }
     ],
-    "name": "logo_image_upload",
+    "name": "login_ad_image_uploadCopy",
     "pageId": "Tenants (Vendors)",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 80,
+  "bottomRow": 68,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -12,27 +12,20 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{\n  !tenantName.text ||\n  !tenantLogo.text ||\n  !primCol.text ||\n  !seconCol.text ||\n  !smsService.text ||\n  !tenantPaymentService.text ||\n  !subPrice.text ||\n  !loginImage.text ||\n  !loginDescription.text ||\n  !loginAdImage.text\n}}\n",
+  "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "y8qvmp6zj1",
-  "leftColumn": 48,
+  "leftColumn": 47,
   "minWidth": 120,
   "mobileBottomRow": 60,
   "mobileLeftColumn": 30,
@@ -40,8 +33,8 @@
   "mobileTopRow": 56,
   "needsErrorInfo": false,
   "onClick": "{{cTenant.run().then(() => {\n  showAlert('Tenant Created Successfully', 'success');\n  rTenant.run();\n}).catch(() => {\n  showAlert('Failed to Create Tenant', 'error');\n});}}",
-  "originalBottomRow": 80,
-  "originalTopRow": 76,
+  "originalBottomRow": 68,
+  "originalTopRow": 64,
   "parentColumnSpace": 20.5625,
   "parentId": "x0vpju1izc",
   "parentRowSpace": 10,
@@ -50,9 +43,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
+  "rightColumn": 60,
   "text": "Submit",
-  "topRow": 76,
+  "topRow": 64,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "5oaaff7usf",

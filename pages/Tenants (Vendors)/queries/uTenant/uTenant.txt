@@ -3,9 +3,9 @@
  "templateConfig":{
  "tenantPrimaryColor":{{priCol.text}},
  "tenantSecondaryColor":{{secCol.text}},
- "textColor":{{textColCopy.options.code}},
+ "textColor":{{textColCopy.selectedOptionValue}},
  "tenantSMSService":{{smsProv.text}},
- "tenantPaymentService":{{payProv.text}},
+ "tenantPaymentService":{{Select1Copy.selectedOptionValue}},
   "contactInfo":{
  "phone":{{tPhoneCopy.text}},
  "email":{{tmailCopy.text}},
@@ -17,7 +17,7 @@
  "loginImageURL":{{logImage.text}},
  "loginTextDescription":{{logDesc.text}},
  "loginAdImageLink":{{logAdImage.text}}},
- "allowedOperator":{{MultiSelect1.selectedOptionValues}}
+ "allowedOperator":{{MultiSelect1Copy.selectedOptionValues}}
 }
  
 }

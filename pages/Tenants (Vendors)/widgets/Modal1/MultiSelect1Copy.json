@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 60,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1.triggeredRow.templateConfig.loginInfo.allowedOperator))(MultiSelect1Copy.options, MultiSelect1Copy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1.triggeredRow.templateConfig.allowedOperator))(MultiSelect1Copy.options, MultiSelect1Copy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

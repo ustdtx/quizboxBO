@@ -1,66 +1,59 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 62,
   "boxShadow": "none",
-  "defaultText": "{{logo_image_upload.data.data.url}}",
+  "defaultOptionValue": "none",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isRequired"
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [],
-  "errorMessage": "",
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
-  "isRequired": "true",
+  "isRequired": false,
   "isVisible": true,
-  "key": "k9xer18md7",
-  "label": "Insert Logo URL",
+  "key": "yaayw8olla",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelText": "Select Payment Gateway",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 22,
+  "mobileBottomRow": 64,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 57,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
-  "originalTopRow": 13,
-  "parentColumnSpace": 20.5625,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 15.0625,
   "parentId": "x0vpju1izc",
   "parentRowSpace": 10,
-  "regex": "",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 31,
-  "showStepArrows": false,
-  "topRow": 12,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "fxifib8mf3",
-  "widgetName": "tenantLogoCopy"
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"None\",\n    \"code\": \"none\"\n  },\n  {\n    \"name\": \"BD Apps\",\n    \"code\": \"bdapps\"\n  }\n]",
+  "topRow": 56,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fnl2t7hctn",
+  "widgetName": "Select1"
 }

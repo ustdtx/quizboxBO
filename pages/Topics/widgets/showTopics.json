@@ -42,9 +42,10 @@
     "updatedAt",
     "__v",
     "category",
+    "nameBn",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1769592099314,
+  "columnUpdatedAt": 1769592692164,
   "columnWidthMap": {
     "tenant": 117
   },
@@ -113,6 +114,9 @@
     },
     {
       "key": "primaryColumns.category.computedValue"
+    },
+    {
+      "key": "primaryColumns.nameBn.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -403,6 +407,40 @@
       "label": "name",
       "notation": "standard",
       "originalId": "name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "nameBn": {
+      "alias": "nameBn",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = showTopics.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"nameBn\"])) : nameBn })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "nameBn",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "nameBn",
+      "notation": "standard",
+      "originalId": "nameBn",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

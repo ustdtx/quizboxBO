@@ -16,7 +16,7 @@
         {
           "key": "image",
           "type": "File",
-          "value": "{{uploadLoginAdImage.files[0].data}}"
+          "value": "{{uploadLoginAdImageCopy.files[0].data}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -50,7 +50,7 @@
     ],
     "name": "login_ad_image_upload",
     "pageId": "Tenants (Vendors)",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
